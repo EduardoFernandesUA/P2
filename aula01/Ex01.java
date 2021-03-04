@@ -1,13 +1,13 @@
 import java.util.Scanner;
 
 class Ex01{
-    public static Scanner KB = new Scanner(System.in);
+    public static Scanner in = new Scanner(System.in);
     static String[] operations = {"+","-","*","/"};
 
     public static void main(String[] args) {
-        double a = KB.nextDouble();
-        String operation = KB.next();
-        double b = KB.nextDouble();
+        double a = in.nextDouble();
+        String operation = in.next();
+        double b = in.nextDouble();
 
         if(!arrayContains(operations, operation)) {
             System.err.println("Operation not included in this calculator!");
