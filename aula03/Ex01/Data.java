@@ -19,8 +19,6 @@ public class Data {
     this.ano = ano;
   }
   Data a = new Data(dia, mes, ano);
-  a.dia;
-  
 
   /** Inicia a data a partir do formato ISO */
   public Data(String iso) {
