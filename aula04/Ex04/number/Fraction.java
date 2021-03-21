@@ -13,8 +13,11 @@ package number;
  * 2007--2018
  */
 
-public class Fraction
+public class Fraction implements Comparable<Fraction>
 {
+  public static final Fraction ZERO = new Fraction(0,1);
+  public static final Fraction ONE = new Fraction(1,1);
+
   private int num;
   private int den;
 
@@ -114,7 +117,7 @@ public class Fraction
   }
 
   public int compareTo(Fraction b) {
-    return 1;
+    return this.num*b.den - b.num*this.den;
   }
   
 }
