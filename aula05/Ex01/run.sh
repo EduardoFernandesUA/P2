@@ -1,2 +1,2 @@
 # chmod +x ./run.sh
-javac Ex01.java && (java -ea Ex01; rm *.class)
+javac TestInput.java && (java -ea TestInput; rm *.class ./util/*.class)
