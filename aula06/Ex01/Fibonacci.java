@@ -1,6 +1,6 @@
 import static java.lang.System.*;
-
 import java.util.Arrays;
+
 /**
  * Run with:
  * javac Fibonacci.java && (java -ea Fibonacci 5 10 20 40; rm Fibonacci.class)

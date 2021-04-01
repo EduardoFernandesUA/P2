@@ -1,5 +1,9 @@
 import static java.lang.System.*;
 
+/**
+ * Run with:
+ * javac ReverseArgs.java && (java -ea ReverseArgs 5 10 20 40; rm ReverseArgs.class)
+ */
 public class ReverseArgs {
 
   public static void main(String[] args) {

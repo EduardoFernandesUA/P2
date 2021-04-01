@@ -1,5 +1,9 @@
 import static java.lang.System.*;
 
+/**
+ * Run with:
+ * javac PrintArgs.java && (java -ea PrintArgs 5 10 20 40; rm PrintArgs.class)
+ */
 public class PrintArgs {
 
   public static void main(String[] args) {
