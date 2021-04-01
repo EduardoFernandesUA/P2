@@ -1,7 +1,10 @@
 import static java.lang.System.*;
 
 import java.util.Arrays;
-
+/**
+ * Run with:
+ * javac Fibonacci.java && (java -ea Fibonacci 5 10 20 40; rm Fibonacci.class)
+ */
 public class Fibonacci {
   private static int fibArray[] = new int[10];
   public static void main(String[] args) {
