@@ -11,29 +11,30 @@ public class TestList1
       lst.addLast(100+i);
     }
     out.println(lst.first());
-    
+    //out.println("1º PRINT:");lst.print();
     lst.removeFirst();
-    LinkedList<Integer> cln = lst.clonee();
-    
+    LinkedList<Integer> cln = lst.clone();
+    //out.println("2º PRINT:");lst.print();
     out.println(cln.first());
-    /*
     
     LinkedList<Integer> rev = cln.reverse();
-    
+    //out.println("3º PRINT:");rev.print();
     out.println(rev.first());
     
     out.println(rev.contains(5));
     rev.remove(5);
     out.println(rev.contains(5));
-
+    
     LinkedList<Integer> another = new LinkedList<Integer>();
     another.addFirst(123);
     another.addFirst(999);
-
+    
     LinkedList<Integer> conc = rev.concatenate(another);
+    //out.println("4º PRINT:");conc.print();
 
+    //out.println("5º PRINT:");
     for(int p=0; p<conc.size(); p++) 
       out.println(conc.get(p));
-    */
+    
   }
 }
