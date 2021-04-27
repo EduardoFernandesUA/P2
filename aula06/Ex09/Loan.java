@@ -7,9 +7,9 @@ public class Loan {
     public static void main(String[] args) {
         assert args.length == 4 : "Usage: java -ea Loan 2 1000 1 20";
         int months = Integer.parseInt(args[0]);
-        double M = Integer.parseInt(args[1]);
-        double T = Integer.parseInt(args[2]);
-        double P = Integer.parseInt(args[3]);
+        double M = Double.parseDouble(args[1]);
+        double T = Double.parseDouble(args[2]);
+        double P = Double.parseDouble(args[3]);
         System.out.printf("(iterativo) d(%d) = %.1f\n", months, iterLoan(months,M,T,P));
         System.out.printf("(recursivo) d(%d) = %.1f\n", months, recuLoan(months,M,T,P));
     }
