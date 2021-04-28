@@ -33,6 +33,20 @@ elif [[ "$1" == "Ex05" ]]; then
     rm *.class ./p2utils/*.class;
   fi
   cd ..
+elif [[ "$1" == "Ex06" ]]; then
+  cd Ex06
+  if javac GetWords.java; then
+    java -ea GetWords data.txt; 
+    rm *.class ./p2utils/*.class;
+  fi
+  cd ..
+elif [[ "$1" == "Ex07" ]]; then
+  cd Ex07
+  if javac GetWords.java; then
+    java -ea GetWords words.txt data.txt; 
+    rm *.class ./p2utils/*.class;
+  fi
+  cd ..
 else
   echo "First argument needs to be passed!"
 fi
