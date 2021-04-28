@@ -19,6 +19,20 @@ elif [[ "$1" == "Ex03" ]]; then
     rm *.class ./p2utils/*.class;
   fi
   cd ..
+elif [[ "$1" == "Ex04" ]]; then
+  cd Ex04
+  if javac TestGenericSort.java; then
+    java -ea TestGenericSort maria joao ana tomas antonio; 
+    rm *.class ./p2utils/*.class;
+  fi
+  cd ..
+elif [[ "$1" == "Ex05" ]]; then
+  cd Ex05
+  if javac ListSort.java; then
+    java -ea ListSort numbers.txt data.txt; 
+    rm *.class ./p2utils/*.class;
+  fi
+  cd ..
 else
   echo "First argument needs to be passed!"
 fi

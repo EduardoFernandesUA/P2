@@ -9,7 +9,7 @@ public class SortedArray<E extends Comparable<E>> {
   private int size = 0;
 
   public SortedArray(int length) {
-    array = (E[]) Array.newInstance(array.getClass().getComponentType(), length);
+    array = (E[]) new Comparable[length];
   }
   public String toString() {
     String ret = "[" + array[0].toString();
