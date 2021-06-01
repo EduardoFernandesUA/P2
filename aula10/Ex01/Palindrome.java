@@ -8,19 +8,19 @@ public class Palindrome {
     Queue<String> queue = new Queue<String>();
     Stack<String> stack = new Stack<String>();
     for(String c : text.split("")){
-      if(Character.isLetter(c.charAt(0))) continue;
+      if(!Character.isLetter(c.charAt(0))) continue;
       queue.in(c);
       stack.push(c);
     }
 
     for (int i = 0; i < queue.size(); i++) {
-      if(queue.peek().toLowerCase().equals(stack.top().toLowerCase())){
-        queue.out();
-        stack.pop();
-        continue;
+      if(!queue.peek().toLowerCase().equals(stack.top().toLowerCase())){
+        System.out.println("Não é palíndromo!");
+        return;
       }
-      System.out.println("Não é palíndromo!");
-      return;
+      queue.out();
+      stack.pop();
+      
     }
     System.out.println("A frase é um palindrome!");
   }
