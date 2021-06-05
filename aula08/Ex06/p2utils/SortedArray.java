@@ -11,10 +11,12 @@ public class SortedArray<E extends Comparable<E>> {
   public SortedArray(int length) {
     array = (E[]) new Comparable[length];
   }
+
   public String toString() {
-    String ret = "[" + array[0].toString();
+    if(size==0) return "[]";
+    String ret = ""+array[0];
     for (int i = 1; i < array.length; i++) {
-      ret += ", " + array[i].toString();
+      ret += ", " + array[i];
     }
     return "[" + ret + "]";
   }
@@ -50,7 +52,10 @@ public class SortedArray<E extends Comparable<E>> {
     size++;
   }
   private void insert(E e, int i) {
-    if (array[i]==null) return;
+    if (array[i]==null) {
+      array[i] = e;
+      return;
+    }
     if(e.compareTo(array[i]) < 0){
       E temp = array[i];
       array[i] = e;
