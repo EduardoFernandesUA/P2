@@ -15,10 +15,8 @@ public class TestSortedArray2
 
   public static void main(String[] args) {
     SortedArray<Integer> lst1 = new SortedArray<Integer>(args.length);
-    out.println(lst1);
     for (int i=0; i<args.length; i++) {
       String arg = args[i];
-      out.println(arg);
       switch (arg) {
       case "f": // show first element
         out.printf("lst1.first(): %d\n", lst1.first()); break;
@@ -26,7 +24,6 @@ public class TestSortedArray2
         lst1.removeFirst(); break;
       default:  // insert value
         lst1.insert(Integer.parseInt(arg));
-        out.println("list: "+lst1.toString());
         break;
       }
     }
