@@ -19,6 +19,13 @@ elif [[ "$1" == "Ex03" ]]; then
     rm *.class ./p2utils/*.class;
   fi
   cd ..
+elif [[ "$1" == "Ex04" ]]; then
+  cd Ex04
+  if javac NumberValue.java; then
+    echo ${@:2} | java -ea NumberValue;
+    rm *.class ./p2utils/*.class;
+  fi
+  cd ..
 else
   echo "First argument needs to be passed!"
 fi
