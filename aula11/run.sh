@@ -26,6 +26,13 @@ elif [[ "$1" == "Ex04" ]]; then
     rm *.class ./p2utils/*.class;
   fi
   cd ..
+elif [[ "$1" == "Ex06" ]]; then
+  cd Ex06
+  if javac CountWords.java; then
+    java -ea CountWords ${@:2};
+    rm *.class ./p2utils/*.class;
+  fi
+  cd ..
 else
   echo "First argument needs to be passed!"
 fi
